@@ -1,0 +1,5 @@
+var mapVue = mapVue || {}
+mapVue = {
+	
+	
+}

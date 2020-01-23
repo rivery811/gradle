@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace = "com.wego.web.tourizm.TourizmMapper">
+	
+	<select id = "createTourizm" parameterType = "hashmap">
+		${CREATE_TOURIZM}
+	</select>
+	
+	<select id = "dropTourizm" parameterType = "map">
+		${DROP_TABLE}
+	</select>
+	
+	<select id="truncateTourizm" parameterType="hashmap">
+		${TRUNCATE}
+	</select>
+	
+	<insert id = "insertTourizm" parameterType="com.wego.web.tourizm.Tourizm">
+		insert into tourizm(PLACE, SPOT, TOURIZMINFO, HEARTCOUNT, IMG) values
+			(#{place}, #{spot},#{tourizmInfo},#{heartCount},#{img})
+	</insert>
+	
+	<select id = "tourizmList" resultType = "hashmap">
+		SELECT * FROM TOURIZM
+	</select>
+	
+	
+</mapper>

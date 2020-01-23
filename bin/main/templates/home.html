@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" >
+<head>
+	<meta charset="UTF-8" />
+<title>WeGo</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src=""></script>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" th:href="@{/css/owl.carousel.min.css}">
+    <link rel="stylesheet" th:href="@{/css/themify-icons.css}">
+    <link rel="stylesheet" th:href="@{/css/flaticon.css}">
+    <link rel="stylesheet" th:href="@{/fontawesome/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/css/magnific-popup.css}">
+    <link rel="stylesheet" th:href="@{/css/gijgo.min.css}">
+    <link rel="stylesheet" th:href="@{/css/nice-select.css}">
+    <link rel="stylesheet" th:href="@{/css/slick.css}">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" th:href="@{/wegocss/crewcss/crew.css}"> 
+<link rel="stylesheet" th:href="@{/wegocss/login.css}">
+<link rel="stylesheet" th:href="@{/wegocss/changhost.css}">
+<link rel="stylesheet" th:href="@{/wegocss/createhost.css}">
+<link rel="stylesheet" th:href="@{/wegocss/tourizmstyle/star.css}">
+<link rel="stylesheet" th:href="@{/wegocss/tourizmstyle/tourizmimg.css}">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link th:href="@{/wegojs/review/css/agency.min.css}" rel="stylesheet">
+ <link th:href="@{/wegojs/review/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet" type="text/css">
+
+
+ <%--  <link th:rel="stylesheet" href="@{/wegocss/crewcss/intro.css}"> --%>
+<script th:src="@{/wegojs/app.js}"></script>
+<script th:src="@{/wegojs/cmm/router.js}"></script>
+<script th:src="@{/wegojs/cmm/mainHome.js}"></script>
+<script th:src="@{/wegojs/vue/mainVue.js}"></script>
+<script th:src="@{/wegojs/vue/mapVue.js}"></script>
+<script th:src="@{/wegojs/crew/vue/crewVue.js}"></script>
+<script th:src="@{/wegojs/crew/vue/introVue.js}"></script>
+<script th:src="@{/wegojs/crew/js/intro.js}"></script>
+<script th:src="@{/wegojs/crew/js/map.js}"></script>
+<script th:src="@{/wegojs/crew/js/crew.js}"></script>
+<script th:src="@{/js/jquery-1.12.1.min.js}"></script>
+<script th:src="@{/js/popper.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/jquery.magnific-popup.js}"></script>
+<script th:src="@{/js/owl.carousel.min.js}"></script>
+<script th:src="@{/js/masonry.pkgd.js}"></script>
+<script th:src="@{/js/jquery.nice-select.min.js}"></script>
+<script th:src="@{/js/gijgo.min.js}"></script>
+<script th:src="@{/js/jquery.ajaxchimp.min.js}"></script>
+<script th:src="@{/js/jquery.form.js}"></script>
+<script th:src="@{/js/jquery.validate.min.js}"></script>
+<script th:src="@{/js/mail-script.js}"></script>
+<script th:src="@{/js/contact.js}"></script>
+<script th:src="@{/js/custom.js}"></script>
+
+<script th:src="@{/wegojs/tourizm/tourizm.js}"></script>
+<script th:src="@{/wegojs/tourizm/tourizm.js}"></script>
+<script th:src="@{/wegojs/tourizm/tourizmVue.js}"></script>
+<script th:src="@{/wegojs/tourizm/tourizmDijkstra.js}"></script>
+<script th:src="@{/wegojs/tourizm/tourizmVue.js}"></script>
+
+<script th:src="@{/wegojs/review/reviewjs/review.js}"></script>
+<script th:src="@{/wegojs/review/vue/main_vue.js}"></script>
+<script th:src="@{/wegojs/review/vue/detail_vue.js}"></script>
+<script th:src="@{/wegojs/review/vue/write_vue.js}"></script>
+<script th:src="@{/wegojs/review/vue/search_vue.js}"></script>
+
+
+<script th:src="@{/wegojs/withcs/login.js}"></script>
+<script th:src="@{/wegojs/withcsvue/login_vue.js}"></script>
+<script th:src="@{/wegojs/withcs/mypage.js}"></script>
+<script th:src="@{/wegojs/withcsvue/mypage_vue.js}"></script>
+
+<script th:src="@{/wegojs/withcs/joinchoice.js}"></script>
+<script th:src="@{/wegojs/withcsvue/joinchoice_vue.js}"></script>
+<script th:src="@{/wegojs/withcs/findinfo.js}"></script>
+<script th:src="@{/wegojs/withcsvue/findinfo_vue.js}"></script>
+<script th:src="@{/wegojs/withcs/deleteinfo.js}"></script>
+<script th:src="@{/wegojs/withcsvue/deleteinfo_vue.js}"></script>
+
+<script th:src="@{/wegojs/host/hostjoin.js}"></script>
+<script th:src="@{/wegojs/hostvue/hostjoin_vue.js}"></script>
+<script th:src="@{/wegojs/host/changehost.js}"></script>
+<script th:src="@{/wegojs/hostvue/changehost_vue.js}"></script>
+<script th:src="@{/wegojs/host/listhost.js}"></script>
+<script th:src="@{/wegojs/hostvue/listhost_vue.js}"></script>
+<script th:src="@{/wegojs/host/createhost.js}"></script>
+<script th:src="@{/wegojs/hostvue/createhost_vue.js}"></script>
+
+<script th:src="@{/wegojs/user/userjoin.js}"></script>
+<script th:src="@{/wegojs/user/userjoin_vue.js}"></script>
+
+<script th:src="@{/wegojs/hotel/hotelHome.js}"></script>
+<script th:src="@{/wegojs/hotel/hVue/hotelMainVue.js}"></script>
+<script th:src="@{/wegojs/hotel/hotelPay.js}"></script>
+<script th:src="@{/wegojs/hotel/hVue/hotelPayVue.js}"></script>
+<script th:src="@{/wegojs/hotel/hVue/hotelDetailVue.js}"></script>
+<script th:src="@{/wegojs/hotel/hotelDetail.js}"></script>
+<script th:src="@{/wegojs/hotel/hotelCompare.js}"></script>
+<script th:src="@{/wegojs/hotel/hVue/hotelComVue.js}"></script>
+<script th:src="@{/wegojs/hotel/hotelPay.js}"></script>
+<script th:src="@{/wegojs/hotel/hVue/hotelPayVue.js}"></script>
+<script th:src="@{/wegojs/hotel/hotelEnd.js}"></script>
+<script th:src="@{/wegojs/hotel/hVue/hotelEndVue.js}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<!-- 주소api -->
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+
+</head>
+<body>
+<script>
+app.run()
+</script>
+</body>
+</html>
